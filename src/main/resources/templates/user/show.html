@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Core Online Tutorial - Show Product</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+
+            <form class="form-horizontal">
+
+                <label >user Id:</label>
+                        <p th:text="${user._id}">user Id</p>
+                <label >user name: </label>
+                        <p th:text="${user.name}">name</p>
+                <label>password:</label>
+                   <p th:text="${user.password}">password</p>
+                <label>rate:</label>
+                    <p th:text="${user.rate}">rate</p>
+            </form>
+
+
+</body>
+</html>

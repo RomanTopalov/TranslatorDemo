@@ -5,6 +5,7 @@
     <title>Category</title>
 </head>
 <body>
+<h1>Category</h1>
     <div th:if="${not #lists.isEmpty(categories)}">
         <h2>Category List</h2>
         <table >
@@ -15,6 +16,10 @@
             <tr th:each="category : ${categories}">
                 <td th:text="${category.id}"></td>
                 <td th:text="${category.name}"></td>
+                <td><a th:href="${'/category/show/' + category.id.toHexString()}">View</a> </td>
+                <td><a th:href="${'/category/edit/' + category.id.toHexString()}">Edit</a> </td>
+                <td><a th:href="${'/category/delete/' + category.id.toHexString()}">Delete</a> </td>
+
             </tr>
         </table>
     </div>

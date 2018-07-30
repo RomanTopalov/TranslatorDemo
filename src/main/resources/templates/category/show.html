@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Category show</title>
+</head>
+<body>
+<h1>Category show</h1>
+
+<form class="form-horizontal">
+
+    <label >user Id:</label>
+    <p th:text="${category.id}">user Id</p>
+    <label >user name: </label>
+    <p th:text="${category.name}">name</p>
+</form>
+</body>
+</html>
